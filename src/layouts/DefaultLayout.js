@@ -15,10 +15,10 @@ import useMobileStatus from '../utils/isMobile';
 const { smallScreenBreakpoint } = config;
 
 const createContentStyles = (
-  isMobile, isSmallScreen, landscape, fullMobileMap, settingsOpen, currentPage,
+  isMobile, isSmallScreen, landscape, fullMobileMap, settingsOpen, currentPage, fullWidthContent
 ) => {
   let width = 450;
-  if (isMobile) {
+  if (isMobile || fullWidthContent) {
     width = '100%';
   } else if (isSmallScreen) {
     width = '50%';
@@ -75,7 +75,7 @@ const createContentStyles = (
 
 const DefaultLayout = (props) => {
   const {
-    currentPage, i18n, intl, location, settingsToggled,
+    content, currentPage, i18n, intl, location, settingsToggled,
   } = props;
   const isMobile = useMobileStatus();
   const isSmallScreen = useMediaQuery(`(max-width:${smallScreenBreakpoint}px)`);
@@ -84,8 +84,9 @@ const DefaultLayout = (props) => {
   const portrait = useMediaQuery('(max-device-aspect-ratio: 1/1)');
 
   const styles = createContentStyles(
-    isMobile, isSmallScreen, landscape, fullMobileMap, settingsToggled, currentPage,
+    isMobile, isSmallScreen, landscape, fullMobileMap, settingsToggled, currentPage, !!content,
   );
+
   return (
     <>
       <div id="topArea" aria-hidden={!!settingsToggled}>
@@ -113,19 +114,27 @@ const DefaultLayout = (props) => {
             />
           )}
           <div style={styles.sidebarContent} aria-hidden={!!settingsToggled}>
-            <ViewRouter />
+            {
+              content || (
+                <ViewRouter />
+              )
+            }
           </div>
         </main>
-        <div
-          aria-label={intl.formatMessage({ id: 'map.ariaLabel' })}
-          aria-hidden={!!settingsToggled}
-          tabIndex="-1"
-          style={styles.map}
-        >
-          <div aria-hidden="true" style={styles.mapWrapper}>
-            <MapView isMobile={!!isMobile} />
-          </div>
-        </div>
+        {
+          !content && (
+            <div
+              aria-label={intl.formatMessage({ id: 'map.ariaLabel' })}
+              aria-hidden={!!settingsToggled}
+              tabIndex="-1"
+              style={styles.map}
+            >
+              <div aria-hidden="true" style={styles.mapWrapper}>
+                <MapView isMobile={!!isMobile} />
+              </div>
+            </div>
+          )
+        }
       </div>
 
       <footer role="contentinfo" aria-hidden={!!settingsToggled} className="sr-only">
