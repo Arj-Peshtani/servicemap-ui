@@ -70,7 +70,7 @@ const InfoView = ({
         hakuehdotuksia, joista voit valita itsellesi sopivan. Voit myös kirjoittaa
         hakemasi sanan loppuun ja painaa Hae-painiketta tai Enter-näppäintä. Jos
         hakutulos ei ollut hyvä, voit tarkentaa hakua Tarkenna-painikkeella. Voit
-        hakea myös usean sanan yhdistelmällä, esimerkiksi ”koulu espanja”.
+        hakea myös usean sanan yhdistelmällä, esimerkiksi ”koulu ranska”.
       </Typography>
       <Typography className={classes.text} variant="body2">
         Jos hakutulos on tyhjä, tarkista kirjoitusasu ja kaupunkivalinnat.
@@ -94,7 +94,7 @@ const InfoView = ({
       <Typography component="h3" variant="body2">Osoitehaku</Typography>
       <Typography className={classes.text} variant="body2">
         Voit kirjoittaa hakukenttään myös osoitteen, josta haluat etsiä
-        palveluja. Haku antaa sinulle osoite- ja alue-ehdotuksia.
+        palveluja. Haku antaa sinulle osoite-ehdotuksia.
         Voit myös kirjoittaa osoitteen loppuun saakka.
       </Typography>
       <Typography component="h3" variant="body2">Palveluluettelo</Typography>
@@ -274,9 +274,9 @@ const InfoView = ({
       <Typography component="h3" variant="body2">Huomasitko saavutettavuuspuutteen digipalvelussamme?</Typography>
       <Typography className={classes.text} variant="body2">
         {`Kerro se meille ja teemme parhaamme puutteen korjaamiseksi
-        Anna saavutettavuuspalautetta verkkolomakkeella linkki aukeaa uudessa ikkunassa `}
-        <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/eFeedback/en/Feedback/87/1048">
-          https://opaskartta.turku.fi/eFeedback/en/Feedback/87/1048
+         `}
+        <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/eFeedback/fi/Feedback/87/1048">
+          Anna saavutettavuuspalautetta verkkolomakkeella linkki aukeaa uudessa ikkunassa
         </Link>
       </Typography>
       <Typography component="h3" variant="body2">SValvontaviranomainen</Typography>
@@ -334,12 +334,9 @@ const InfoView = ({
       </Typography>
       <Typography component="h4" variant="body2">Tarjoamme tukea käyttäjille joille digipalvelut eivät ole saavutettavissa</Typography>
       <Typography className={classes.text} variant="body2">
-        Digitukea on mahdollista saada
+        Digitukea on mahdollista saada Turun kaupungin
       </Typography>
       <ul>
-        <li>
-          <Typography className={classes.text} variant="body2">Turun kaupungin</Typography>
-        </li>
         <li>
           <Typography className={classes.text} variant="body2">asiointipisteistä Skanssin Monitorissa (Skanssinkatu 10, 20730 Turku) sekä</Typography>
         </li>
@@ -378,7 +375,7 @@ const InfoView = ({
         Planning information, 3D buildings, site layout plans, place names, etc.
         are available on the
         {' '}
-        <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/">
+        <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/IMS/en/Map">
           regional guide map
         </Link>
         .
@@ -411,12 +408,12 @@ const InfoView = ({
         enter a complete word and then press the Search button or the enter key. If the
         search results are not to your liking, you can refine your search by clicking
         the ‘Refine search’ button. You can also search using a multi-word combination,
-        for example ‘school Spanish’.
+        for example ‘school French’.
       </Typography>
       <Typography className={classes.text} variant="body2">
-        If you do not receive any search results, check the spelling and city selection.
-        You can also try entering the address around which you are looking for a service
-        or keywords, such as ‘sports hall’ or ‘Swedish day care centre’.
+        If you do not receive any search results, check the spelling. You can also
+        try entering the address around which you are looking for a service or keywords,
+        such as ‘sports hall’ or ‘Swedish day care centre’.
       </Typography>
       <Typography className={classes.text} variant="body2">
         Use the x in the search field to clear your search.
@@ -435,8 +432,8 @@ const InfoView = ({
       <Typography component="h3" variant="body2">Address search</Typography>
       <Typography className={classes.text} variant="body2">
         You can also enter an address in the search field around which you want
-        to look for services. The search will provide you with address and area
-        suggestions as you type. You can also enter a complete address.
+        to look for services. The search will provide you with address suggestions
+        as you type You can also enter a complete address.
       </Typography>
       <Typography component="h3" variant="body2">Services list</Typography>
       <Typography className={classes.text} variant="body2">
@@ -633,9 +630,10 @@ const InfoView = ({
       <Typography component="h3" variant="body2">Did you notice a problem in the web accessibility of our digital service?</Typography>
       <Typography className={classes.text} variant="body2">
         {`Please tell us about it and we will do our best to fix the problem. 
-        Please feel free to give feedback on the web accessibility of our digital service on this web form `}
+        `}
         <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/eFeedback/en/Feedback/87/1048">
-          https://opaskartta.turku.fi/eFeedback/en/Feedback/87/1048
+          Please feel free to give feedback on the web accessibility of our digital service
+          on this web form
         </Link>
       </Typography>
       <Typography component="h3" variant="body2">Supervisory Authority</Typography>
@@ -733,10 +731,10 @@ const InfoView = ({
         exempelvis skolor, daghem och hälsostationer.
       </Typography>
       <Typography className={classes.text} variant="body2">
-        Bland annat planläggningsuppgifter, 3D-byggnader, tomtindelningar och uppgifter om
-        namnskicket finns i
+        Bland annat planläggningsuppgifter, 3D-byggnader, tomtindelningar och uppgifter
+        om namnskicket finns i
         {' '}
-        <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/">
+        <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/IMS/sv/Map">
           den regionala guidekartan
         </Link>
         .
@@ -768,12 +766,11 @@ const InfoView = ({
         ger dig förslag av vilka du kan välja det lämpligaste.  Du kan också skriva
         hela sökordet och klicka på Sök eller tangenten Enter. Om du inte är nöjd med
         sökresultatet kan du begränsa sökningen genom att klicka på ”Precisera”.
-        Du kan också söka med flera ord, t.ex. ”skola spanska”.
+        Du kan också söka med flera ord, t.ex. ”skola franska”.
       </Typography>
       <Typography className={classes.text} variant="body2">
-        Om du inte får lämpliga sökresultat, kolla rättstavningen och valet av stad.
-        eten av var du söker service. Ange nyckelord såsom ”idrottssal” eller
-        ”svenskspråkigt daghem”.
+        Om du inte får lämpliga sökresultat, kolla rättstavningen.
+        Ange nyckelord såsom ”idrottssal” eller ”svenskspråkigt daghem”.
       </Typography>
       <Typography className={classes.text} variant="body2">
         I sökfältet finns ett kryss med vilket du kan tömma sökningen.
@@ -792,7 +789,7 @@ const InfoView = ({
       <Typography component="h3" variant="body2">Adressökning</Typography>
       <Typography className={classes.text} variant="body2">
         Du kan också söka med en adress där du vill hitta tjänster.
-        Sökningen föreslår dig adresser och områden. Du kan också
+        Sökningen föreslår dig adresser. Du kan också
         skriva hela adressen.
       </Typography>
       <Typography component="h3" variant="body2">Servicekatalog</Typography>
@@ -844,7 +841,7 @@ const InfoView = ({
         Vi tackar för all respons som hjälper oss att göra servicekartan ännu bättre.
         Du kan ge allmän respons om kartan genom att klicka på länken
         {' '}
-        <Link target="_blank" className={classes.link} href="https://www.turku.fi/palaute">
+        <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/eFeedback/sv">
           www.turku.fi/palaute
         </Link>
         {' '}
@@ -859,12 +856,12 @@ const InfoView = ({
       <ul>
         <li>
           <Link target="_blank" href="https://github.com/City-of-Helsinki/servicemap-ui/">
-            <Typography className={classes.link} variant="body2">Användargränssnittets källkod</Typography>
+            <Typography className={classes.link} variant="body2">Applikationens källkod</Typography>
           </Link>
         </li>
         <li>
           <Link target="_blank" href="https://github.com/City-of-Helsinki/smbackend/">
-            <Typography className={classes.link} variant="body2">Serverapplikationens källkod</Typography>
+            <Typography className={classes.link} variant="body2">Serviceapplikationens källkod</Typography>
           </Link>
         </li>
       </ul>
@@ -883,7 +880,7 @@ const InfoView = ({
       <Typography className={classes.text} variant="body2">
         Uppgifter om Åbo stads tjänster finns i
         {' '}
-        <Link target="_blank" className={classes.link} href="https://www.turku.fi/en/service-directory">
+        <Link target="_blank" className={classes.link} href="https://www.turku.fi/sv/service-directory">
           servicekatalogen på Turku.fi
         </Link>
         {' '}
@@ -960,9 +957,9 @@ const InfoView = ({
       <Typography className={classes.text} variant="body2">
         {`Berätta om det för oss så gör vi vårt bästa för att korrigera felet 
         Webbformulär
-        Ge feedback om tillgängligheten med detta webbformulär  `}
-        <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/eFeedback/en/Feedback/87/1048">
-          https://opaskartta.turku.fi/eFeedback/en/Feedback/87/1048
+        `}
+        <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/eFeedback/sv/Feedback/87/1048">
+          Ge feedback om tillgängligheten med detta webbformulär
         </Link>
       </Typography>
       <Typography component="h3" variant="body2">Tillsynsmyndigheten</Typography>
@@ -1016,15 +1013,15 @@ const InfoView = ({
       <Typography component="h4" variant="body2">Vi har bundit oss till att förbättra tillgängligheten i digitjänsterna</Typography>
       <Typography className={classes.text} variant="body2">
         Åbo stads tillgänglighetskompetens utvecklas systematiskt och målmedvetet.
-        Stadens avtalsle-verantörer för tillgänglighet kommer att göra en bedömning
-        av stadens nuvarande webbtjäns-ter. På basen av bedömingen kommer
-        tillgängligheten i tjänsterna utvecklas att motsvara de lagenliga kraven för
-        vardera tjänst inom utsatt tid. Vid utveckling och anskaffning av nya webb-tjänster
-        tas tillgängligheten i beaktande från början. Alla parter som deltar i utvecklingen
-        och innehållsproduktinen av webbtjänsterna blir utbildade i tillgänglighetsfrågor.
-        I staden pågår projektet Uppfyllande av kraven i tillgänglighetslagen.Vi erbjuder
-        stöd för användare som inte har tillgång till de digitala tjänsterna på Åbo
-        stads servicepunkter:
+        Stadens avtalsleverantörer för tillgänglighet kommer att göra en bedömning
+        av stadens nuvarande webbtjänster. På basen av bedömingen kommer
+        tillgängligheten i tjänsterna utvecklas att motsvara de lagenliga kraven
+        för vardera tjänst inom utsatt tid. Vid utveckling och anskaffning av nya
+        webbtjänster tas tillgängligheten i beaktande från början. Alla parter
+        som deltar i utvecklingen och innehållsproduktinen av webbtjänsterna blir
+        utbildade i tillgänglighetsfrågor. I staden pågår projektet Uppfyllande av
+        kraven i tillgänglighetslagen. Vi erbjuder stöd för användare som inte har
+        tillgång till de digitala tjänsterna på Åbo stads servicepunkter:
       </Typography>
       <ul>
         <li>
@@ -1039,10 +1036,10 @@ const InfoView = ({
       </ul>
       <Typography component="h3" variant="body2">Uppdatering av tillgänglighetsutlåtande</Typography>
       <Typography className={classes.text} variant="body2">
-        Webbplatsens tillgänglighet kontrolleras genom kontinuerlig tillsyn när
-        tekniken eller in-nehållet förändras, samt granskning med regelbundna
-        intervall. Detta utlåtande uppdate-ras i samband med ändringar av
-        webbplatsen samt granskningar av tillgänglighet.
+        Webbplatsens tillgänglighet kontrolleras genom kontinuerlig tillsyn när tekniken
+        eller innehållet förändras, samt granskning med regelbundna intervall. Detta
+        utlåtande uppdateras i samband med ändringar av webbplatsen samt granskningar
+        av tillgänglighet.
       </Typography>
       <Typography className={classes.text} variant="body2">
         {`Denna webbplats/plattform har publicerats
