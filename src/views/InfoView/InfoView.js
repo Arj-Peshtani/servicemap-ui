@@ -279,7 +279,7 @@ const InfoView = ({
           Anna saavutettavuuspalautetta verkkolomakkeella linkki aukeaa uudessa ikkunassa
         </Link>
       </Typography>
-      <Typography component="h3" variant="body2">SValvontaviranomainen</Typography>
+      <Typography component="h3" variant="body2">Valvontaviranomainen</Typography>
       <Typography className={classes.text} variant="body2">
         Jos huomaat sivustolla saavutettavuusongelmia, anna ensin palautetta
         sivuston ylläpitäjälle. Vastauksessa voi mennä 14 päivää. Jos et ole
@@ -322,15 +322,15 @@ const InfoView = ({
       </Typography>
       <Typography component="h4" variant="body2">Olemme sitoutuneet digipalveluiden saavutettavuuden parantamiseen</Typography>
       <Typography className={classes.text} variant="body2">
-        Turun kaupungin saavutettavuusosaamista kehitetään suunnitelmallisesti ja
-        määrätietoisesti. Kaupungin saavutettavuuden puitesopimustoimittajat
+        Turun kaupungin saavutettavuusosaamista kehitetään suunnitelmallisesti
+        ja määrätietoisesti. Kaupungin saavutettavuuden puitesopimustoimittajat
         tulevat arvioimaan kaupungin nykyiset verkkopalvelut. Arvioinnin
-        perusteella palveluiden saavutettavuutta kehitetään lain vaatimalle
-        tasolle kunkin palvelun määräaikaan mennessä. Uusien verkkopalveluiden
-        kehittämisessä ja hankinnassa saavutettavuus huomioidaan alusta lähtien.
-        Saavutettavuuskoulutusta järjestetään kaikille osapuolille, jotka
-        osallistuvat verkkopalveluiden kehittämiseen ja niiden sisältöjen tuottamiseen.
-        Kaupungissa on käynnissä projekti Saavutettavuuslain vaatimusten täyttäminen.
+        perusteella palveluiden saavutettavuutta kehitetään lain vaatimalle tasolle.
+        Uusien verkkopalveluiden kehittämisessä ja hankinnassa saavutettavuus
+        huomioidaan alusta lähtien. Saavutettavuuskoulutusta järjestetään kaikille
+        osapuolille, jotka osallistuvat verkkopalveluiden kehittämiseen ja niiden
+        sisältöjen tuottamiseen. Kaupungissa on käynnissä projekti Saavutettavuuslain
+        vaatimusten täyttäminen.
       </Typography>
       <Typography component="h4" variant="body2">Tarjoamme tukea käyttäjille joille digipalvelut eivät ole saavutettavissa</Typography>
       <Typography className={classes.text} variant="body2">
@@ -395,7 +395,7 @@ const InfoView = ({
         <li><Typography variant="body2">health stations</Typography></li>
         <li><Typography variant="body2">schools</Typography></li>
         <li><Typography variant="body2">day care centres</Typography></li>
-        <li><Typography variant="body2">swimming halls</Typography></li>
+        <li><Typography variant="body2">indoor swimming pools</Typography></li>
         <li><Typography variant="body2">playing fields</Typography></li>
         <li><Typography variant="body2">libraries</Typography></li>
         <li><Typography variant="body2">youth centres</Typography></li>
@@ -594,7 +594,7 @@ const InfoView = ({
         accessibility requirements.
       </Typography>
       <Typography className={classes.text} variant="body2">
-        The map-based information is not accessible, but it does not disturb other usage and
+        The map-based information is not accessible, but it does not prevent other usage and
         the addresses are also presented in text form. The map content is not covered by
         the applicable legislation.
       </Typography>
@@ -685,11 +685,11 @@ const InfoView = ({
         systematic and purposeful manner. The City’s framework agreement suppliers of
         accessibility-related services assessed the City’s current online services.
         Based on the assessment, accessibility will be improved to the level required
-        by law within the time limits defined for the different services. Accessibility
-        will be taken into account in the development and procurement of new online services.
-        Accessibility training is organised for all parties who participate in developing online
-        services and producing content for them. The City has an on-going project for fulfilling
-        the requirements of the Act on the Provision of Digital Services.
+        by law. Accessibility will be taken into account in the development and procurement
+        of new online services. Accessibility training is organised for all parties who
+        participate in developing online services and producing content for them. The City
+        has an on-going project for fulfilling the requirements of the Act on the
+        Provision of Digital Services.
       </Typography>
       <Typography className={classes.text} variant="body2">
         The Citizen Services Points of the City of Turku offer support to users who cannot access
@@ -905,8 +905,8 @@ const InfoView = ({
     <div className={classes.textContainer}>
       <Typography component="h3" variant="body2">Tillgänglighetsutlåtande</Typography>
       <Typography className={classes.text} variant="body2">
-        Detta tillgänglighetsutlåtande gäller Åbo stads webbplats Servicekarta.
-        Webbplatsens adress är
+        Detta tillgänglighetsutlåtande gäller Åbo stads webbplats Servicekarta. Webbplatsens
+        adress är
         {' '}
         <Link target="_blank" className={classes.link} href="https://servicekarta.turku.fi">
           https://servicekarta.turku.fi
@@ -914,13 +914,13 @@ const InfoView = ({
         .
       </Typography>
       <Typography className={classes.text} variant="body2">
-        Saavutettavuusseloste on tehty alkujaan Helsingin kaupungin palve-lukarttaan osoitteessa
+        Tillgänglighetsutlåtandet har ursprungligen upprättats för Helsingfors stads
+        servicekarta som har samma funktioner och användargränssnitt och finns på adressen
         {' '}
-        <Link target="_blank" className={classes.link} href="https://palvelukartta.hel.fi,">
+        <Link target="_blank" className={classes.link} href="https://palvelukartta.hel.fi">
           https://palvelukartta.hel.fi
         </Link>
-        , jossa on samat toiminnallisuudet ja käyttöliittymä. Helsingin
-        vastaava toteutus on arvioitu 27.1.2020.
+        . Helsingfors stads motsva-righet har bedömts 27.1.2020.
       </Typography>
       <Typography component="h3" variant="body2">Digitjänstens tillgänglighet just nu</Typography>
       <Typography className={classes.text} variant="body2">
@@ -932,15 +932,15 @@ const InfoView = ({
         Nedan angivet innehåll uppfyller ännu ej alla lagstadgade tillgänglighetskrav.
       </Typography>
       <Typography className={classes.text} variant="body2">
-        Palvelukartta.turku.fi sivusto on saavutettava siltä osin, kuin saavutettavuuslaki
-        sitä edellyttää. Saavutettavuuslain ulkopuolella ovat kartat, joten tässä
-        palvelussa oleva kartta ei ole saavutettava
+        Webbplatsen palvelukartta.turku.fi är tillgänglig till den del som tillgänglighetslagen
+        förutsätter. Utanför tillgänglighetslagen faller kartorna, vilket innebär att kartan
+        som finns i denna tjänst inte är tillgänglig.
       </Typography>
-      <Typography component="h4" variant="body2">Puutteiden korjaus</Typography>
+      <Typography component="h4" variant="body2">Korrigering av brister</Typography>
       <Typography className={classes.text} variant="body2">
-        Karttanäkymää ei tehdä saavutettavaksi. Ruudunlukijalta kartta on piilotettu.
-        Näppäimistöllä pääsee lähentämään ja loitontamaan karttaa, mutta ei pääse
-        kartalla oleviin toimipisteeseen.
+        Kartvyn görs inte tillgänglig. Kartan är gömd från skärmläsaren.
+        Med tangentbordet kan du zooma in och ut på kartan, men kommer
+        inte åt verksamhetsställena som visas på kartan.
       </Typography>
       <Typography className={classes.text} variant="body2">
         Innehåll som inte kan nås på grund av nämnda brister kan begäras från
@@ -965,10 +965,10 @@ const InfoView = ({
       <Typography component="h3" variant="body2">Tillsynsmyndigheten</Typography>
       <Typography className={classes.text} variant="body2">
         Om du upptäcker ett tillgänglighetsproblem på webbplatsen,
-        ge feedback i första hand till oss d.v.s. vi som upprätthåller webbplatsen.
-        Det kan dröja upp till 14 dagar innan du får svar. Om du är missnöjd med
-        svaret eller inte får något svar alls efter två veckor, kan du göra en anmälan
-        till Regionförvaltningsverket i Södra Finland (
+        ge feedback i första hand till oss d.v.s. vi som upprätthåller
+        webbplatsen. Det kan dröja upp till 14 dagar innan du får svar.
+        Om du är missnöjd med svaret eller inte får något svar alls efter
+        två veckor, kan du göra en anmälan till Regionförvaltningsverket i Södra Finland (
         <Link target="_blank" className={classes.link} href="https://www.tillganglighetskrav.fi/dina-rattigheter/">
           https://www.tillganglighetskrav.fi/dina-rattigheter/
         </Link>
@@ -986,23 +986,22 @@ const InfoView = ({
       <Typography component="h3" variant="body2">Vi jobbar kontinuerligt för bättre tillgänglighet</Typography>
       <Typography component="h4" variant="body2">Det har gjorts en tillgänglighetsbedömning av våra digitjänster</Typography>
       <Typography className={classes.text} variant="body2">
-        Vid bedömning av tillgänglighet har följts Helsingfors stads
-        arbetsanvisning och metoder som siktar till att säkerställa
-        webbplatsens tillgänglighet i alla arbetsfaser.
-        Tillgängligheten är kontrollerad genom revision av en extern
-        expert samt som egen edömning. Tillgängligheten är kontrollerad
-        med hjälp av automatisk tillgänglighetskontroll samt manuell kontroll
-        av webbplatsen och innehållet. Automatiska kontroller har utförts med
-        användning av bedömningsverktyget Lighthouse i webbläsaren Google Chrome,
-        webbläsartillägget axe från Deque Systems Inc. samt webbläsartillägget Siteimprove.
+        Vid bedömning av tillgänglighet har följts Helsingfors stads arbetsanvisning
+        och metoder som siktar till att säkerställa webbplatsens tillgänglighet i
+        alla arbetsfaser. Tillgängligheten är kontrollerad genom revision av en extern
+        expert samt som egen edömning. Tillgängligheten är kontrollerad med hjälp av
+        automatisk tillgänglighetskontroll samt manuell kontroll av webbplatsen och
+        innehållet. Automatiska kontroller har utförts med användning av bedömningsverktyget
+        Lighthouse i webbläsaren Google Chrome, webbläsartillägget axe från Deque Systems
+        Inc. samt webbläsartillägget Siteimprove.
       </Typography>
       <Typography className={classes.text} variant="body2">
         Missförhållanden som bedömningsverktygen rapporterat har kontrollerats och vid
         behov korrigerats.
       </Typography>
       <Typography className={classes.text} variant="body2">
-        Den externa expertrevisionen har utförts av Annanpura Oy Revisionsrapporten
-        kan laddas ner från:
+        Den externa expertrevisionen har utförts av Annanpura Oy Revisionsrapporten kan
+        laddas ner från:
         {' '}
         <Link target="_blank" className={classes.link} href="https://www.hel.fi/static/liitteet-2019/Helsinki/Saavutettavuusselosteet/Palvelukartta-auditointiraportti.pdf">
           https://www.hel.fi/static/liitteet-2019/Helsinki/Saavutettavuusselosteet/Palvelukartta-auditointiraportti.pdf
@@ -1015,13 +1014,13 @@ const InfoView = ({
         Åbo stads tillgänglighetskompetens utvecklas systematiskt och målmedvetet.
         Stadens avtalsleverantörer för tillgänglighet kommer att göra en bedömning
         av stadens nuvarande webbtjänster. På basen av bedömingen kommer
-        tillgängligheten i tjänsterna utvecklas att motsvara de lagenliga kraven
-        för vardera tjänst inom utsatt tid. Vid utveckling och anskaffning av nya
-        webbtjänster tas tillgängligheten i beaktande från början. Alla parter
-        som deltar i utvecklingen och innehållsproduktinen av webbtjänsterna blir
-        utbildade i tillgänglighetsfrågor. I staden pågår projektet Uppfyllande av
-        kraven i tillgänglighetslagen. Vi erbjuder stöd för användare som inte har
-        tillgång till de digitala tjänsterna på Åbo stads servicepunkter:
+        tillgängligheten i tjänsterna utvecklas att motsvara de lagenliga kraven.
+        Vid utveckling och anskaffning av nya webbtjänster tas tillgängligheten
+        i beaktande från början. Alla parter som deltar i utvecklingen och
+        innehållsproduktinen av webbtjänsterna blir utbildade i tillgänglighetsfrågor.
+        I staden pågår projektet Uppfyllande av kraven i tillgänglighetslagen. Vi erbjuder
+        stöd för användare som inte har tillgång till de digitala tjänsterna på Åbo stads
+        servicepunkter:
       </Typography>
       <ul>
         <li>
