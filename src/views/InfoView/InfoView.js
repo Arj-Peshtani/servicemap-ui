@@ -73,7 +73,7 @@ const InfoView = ({
         hakea myös usean sanan yhdistelmällä, esimerkiksi ”koulu ranska”.
       </Typography>
       <Typography className={classes.text} variant="body2">
-        Jos hakutulos on tyhjä, tarkista kirjoitusasu ja kaupunkivalinnat.
+        Jos hakutulos on tyhjä, tarkista kirjoitusasu.
         Kirjoita osoite, jonka läheltä etsit palvelua. Kirjoita avainsanoja,
         esimerkiksi ”liikuntasali”, ”ruotsinkielinen päiväkoti”.
       </Typography>
@@ -275,7 +275,7 @@ const InfoView = ({
       <Typography className={classes.text} variant="body2">
         {`Kerro se meille ja teemme parhaamme puutteen korjaamiseksi
          `}
-        <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/eFeedback/fi/Feedback/87/1048">
+        <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/eFeedback/fi/Feedback/30/1127">
           Anna saavutettavuuspalautetta verkkolomakkeella linkki aukeaa uudessa ikkunassa
         </Link>
       </Typography>
@@ -631,7 +631,7 @@ const InfoView = ({
       <Typography className={classes.text} variant="body2">
         {`Please tell us about it and we will do our best to fix the problem. 
         `}
-        <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/eFeedback/en/Feedback/87/1048">
+        <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/eFeedback/en/Feedback/30/1127">
           Please feel free to give feedback on the web accessibility of our digital service
           on this web form
         </Link>
@@ -958,7 +958,7 @@ const InfoView = ({
         {`Berätta om det för oss så gör vi vårt bästa för att korrigera felet 
         Webbformulär
         `}
-        <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/eFeedback/sv/Feedback/87/1048">
+        <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/eFeedback/sv/Feedback/30/1127">
           Ge feedback om tillgängligheten med detta webbformulär
         </Link>
       </Typography>
