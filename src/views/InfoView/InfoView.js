@@ -146,7 +146,7 @@ const InfoView = ({
         Kiitämme kaikesta palautteesta, joka auttaa meitä kehittämään Palvelukarttaa
         yhä paremmaksi. Yleistä karttaa koskevaa palautetta voit lähettää linkistä:
         {' '}
-        <Link target="_blank" className={classes.link} href="https://www.turku.fi/palaute">
+        <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/eFeedback/fi/Feedback/30/1127">
           www.turku.fi/palaute
         </Link>
         {' '}
@@ -275,7 +275,7 @@ const InfoView = ({
       <Typography className={classes.text} variant="body2">
         {`Kerro se meille ja teemme parhaamme puutteen korjaamiseksi
          `}
-        <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/eFeedback/fi/Feedback/30/1127">
+        <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/eFeedback/fi/Feedback/87/1048 ">
           Anna saavutettavuuspalautetta verkkolomakkeella linkki aukeaa uudessa ikkunassa
         </Link>
       </Typography>
@@ -495,7 +495,7 @@ const InfoView = ({
         We welcome all feedback that helps us develop and improve the Service Map.
         You can submit general feedback about the map service via the following link:
         {' '}
-        <Link target="_blank" className={classes.link} href="https://www.turku.fi/feedback">
+        <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/eFeedback/en/Feedback/30/1127">
           www.turku.fi/feedback
         </Link>
         {' '}
@@ -631,7 +631,7 @@ const InfoView = ({
       <Typography className={classes.text} variant="body2">
         {`Please tell us about it and we will do our best to fix the problem. 
         `}
-        <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/eFeedback/en/Feedback/30/1127">
+        <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/eFeedback/en/Feedback/87/1048 ">
           Please feel free to give feedback on the web accessibility of our digital service
           on this web form
         </Link>
@@ -841,8 +841,8 @@ const InfoView = ({
         Vi tackar för all respons som hjälper oss att göra servicekartan ännu bättre.
         Du kan ge allmän respons om kartan genom att klicka på länken
         {' '}
-        <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/eFeedback/sv">
-          www.turku.fi/palaute
+        <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/eFeedback/sv/Feedback/30/1127">
+          www.turku.fi/Feedbacktjansten
         </Link>
         {' '}
         (länken öppnas i en ny flik).
@@ -958,7 +958,7 @@ const InfoView = ({
         {`Berätta om det för oss så gör vi vårt bästa för att korrigera felet 
         Webbformulär
         `}
-        <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/eFeedback/sv/Feedback/30/1127">
+        <Link target="_blank" className={classes.link} href="https://opaskartta.turku.fi/eFeedback/sv/Feedback/87/1048 ">
           Ge feedback om tillgängligheten med detta webbformulär
         </Link>
       </Typography>
