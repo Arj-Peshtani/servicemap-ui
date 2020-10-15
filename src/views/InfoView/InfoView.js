@@ -355,7 +355,7 @@ const InfoView = ({
       </Typography>
       <Typography className={classes.text} variant="body2">
         {`Tämä verkkosivusto/sovellus on julkaistu
-          23.09.2019/uusi toteutus on julkaistu xx.xx.2020`}
+          23.09.2019/uusi toteutus on julkaistu 14.10.2020`}
       </Typography>
     </div>
   );
@@ -714,7 +714,7 @@ const InfoView = ({
       </Typography>
       <Typography className={classes.text} variant="body2">
         {`The date on which this website/application has been published 
-          23.9.2019/The new version has been published xx.xx.2020`}
+          23.9.2019/The new version has been published 14.10.2020`}
       </Typography>
     </div>
   );
@@ -1042,7 +1042,7 @@ const InfoView = ({
       </Typography>
       <Typography className={classes.text} variant="body2">
         {`Denna webbplats/plattform har publicerats
-          23.09.2019/nuvarande service har publicerats xx.xx.2020`}
+          23.09.2019/nuvarande service har publicerats 14.10.2020`}
       </Typography>
     </div>
   );
